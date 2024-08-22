@@ -179,7 +179,6 @@ fn build_static(std_zlib: bool) {
         cc
             .file("vendor/arm/arm_init.c")
             .file("vendor/arm/filter_neon_intrinsics.c")
-            .file("vendor/arm/filter_neon.S")
             .file("vendor/arm/palette_neon_intrinsics.c");
     }
 
